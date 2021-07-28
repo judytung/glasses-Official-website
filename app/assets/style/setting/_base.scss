@@ -1,0 +1,21 @@
+/*全域設定*/
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto","Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display:block;
+    text-decoration: none;
+}
