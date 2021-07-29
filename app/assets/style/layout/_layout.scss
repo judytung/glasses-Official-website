@@ -1,3 +1,4 @@
+/*header*/
 .header {
     background-color:$color-primary;
     padding: 30px 88px;
@@ -49,46 +50,42 @@
     }
 }
 
-
+/*footer*/
 .footer {
     background-color: $color-primary;  
     padding: 32px 0 40px;
-}
-
-.footer-content {
-    width: 60%;
-}
-
-.footer-menu li {
-    max-width: 64px;
-    a {
+    &-content {
+        width: 60%;
+    }
+    &-menu li {
+        max-width: 64px;
+        a {
+            color: $color-white;
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+    &-list li a {
         color: $color-white;
+        font-size:$font-size-l;
         &:hover {
             font-weight: bold;
         }
     }
-}
-
-.footer-list li a {
-    color: $color-white;
-    font-size:$font-size-l;
-    &:hover {
-        font-weight: bold;
+    &-list-icon {
+        max-width: 48px;
+        margin-right: 22px;
+    }
+    &-icons li a {
+        color: $color-white;
+        font-size: $font-size-lg;
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 }
 
-.footer-list-icon {
-    max-width: 48px;
-    margin-right: 22px;
-}
-
-.footer-icons li a {
-    color: $color-white;
-    font-size: $font-size-lg;
-    &:hover {
-        transform: translateY(-5px);
-    }
-}
 
 .hr {
     border: 1px solid #fff;
@@ -96,43 +93,44 @@
 
 .copyright {
     color: $color-white;
-}
-
-.copyright-list li a {
-    color: $color-white;
-    font-size: $font-size-s;
+    &-list li a {
+        color: $color-white;
+        font-size: $font-size-s;
+    }
 }
 
 @include pad {
     .footer {
         padding: 32px 39px;
-    }
-    .footer-list :nth-child(2) {
-        margin-top: 12px;
-    }
-    .footer-list li a {
-        font-size: $font-size-m;
-    }
-    .footer-list-icon  {
-        max-width: 30px;
-    }
-    .footer-icons li a {
-        font-size: $font-size-2;
+        &-list :nth-child(2) {
+            margin-top: 12px;
+        }
+        &-list li a {
+            font-size: $font-size-m;
+        }
+        &-list-icon {
+            max-width: 30px;
+        }
+        &-icons li a {
+            font-size: $font-size-2;
+        }
+        &-content {
+            width: 75%;
+        }
+        &-icons {
+            width: 25%;
+        }
     }
     .fa-facebook ,.fa-instagram {
         margin-right: 24px;
     }
-    .footer-content{
-        width: 75%;
-    }
-    .footer-icons {
-        width: 25%;
-    }
-    .copyright p {
-        margin-top: 24px;
-    }
-    .copyright-list {
-        margin-top: 36px;
+    .copyright {
+        p  {
+            margin-top: 24px;
+        }
+        &-list {
+            margin-top: 36px;
+        }
     }
 }
 
@@ -141,30 +139,32 @@
 @include mobile {
     .footer {
         padding: 24px 0;
+        &-menu {
+            display: none;
+        }
+        &-list :nth-child(2) {
+            margin-top: 6px;
+        }
+        &-list li a {
+            font-size:$font-size-1 ;
+        }
+        &-list-icon {
+            max-width: 21px;
+        }
     }
-    .footer-menu {
-        display: none;
-    }
-    .footer-list :nth-child(2) {
-        margin-top: 6px;
-    }
-    .footer-list li a {
-        font-size:$font-size-1 ;
-    }
-    .footer-list-icon {
-        max-width: 21px;
-    }
-    .copyright p {
-        width: 100%;
-        font-size: 14px;
-        margin-top: 16px;
-    }
-    .copyright-list {
-        margin-top: 0;
-    }
-    .copyright-list li{
-        width: 100%;
-        margin-top: 8px;
+    .copyright{
+        p {
+            width: 100%;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+        &-list {
+            margin-top: 0;
+        }
+        &-list li {
+            width: 100%;
+            margin-top: 8px;
+        }   
     }
 }    
 
