@@ -148,6 +148,9 @@ a {
 .mr-4 {
   margin-right: 32px; }
 
+.mr-6 {
+  margin-right: 48px; }
+
 .p-pc-style {
   padding: 60px 0 80px 0; }
 
@@ -185,7 +188,7 @@ a {
     text-indent: 101%;
     white-space: nowrap;
     overflow: hidden;
-    background-image: url(/assets/images/logo.png);
+    background-image: url(../images/logo.png);
     background-size: cover;
     width: 80px;
     height: 49px; }
@@ -225,6 +228,88 @@ a {
       color: #AA0601; } }
 
 .footer {
-  background-color: #AA0601; }
+  background-color: #AA0601;
+  padding: 32px 0 40px; }
+
+.footer-content {
+  width: 60%; }
+
+.footer-menu li {
+  max-width: 64px; }
+  .footer-menu li a {
+    color: #fff; }
+    .footer-menu li a:hover {
+      font-weight: bold; }
+
+.footer-list li a {
+  color: #fff;
+  font-size: 36px; }
+  .footer-list li a:hover {
+    font-weight: bold; }
+
+.footer-list-icon {
+  max-width: 48px;
+  margin-right: 22px; }
+
+.footer-icons li a {
+  color: #fff;
+  font-size: 48px; }
+  .footer-icons li a:hover {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px); }
+
+.hr {
+  border: 1px solid #fff; }
+
+.copyright {
+  color: #fff; }
+
+.copyright-list li a {
+  color: #fff;
+  font-size: 14px; }
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 32px 39px; }
+  .footer-list :nth-child(2) {
+    margin-top: 12px; }
+  .footer-list li a {
+    font-size: 20px; }
+  .footer-list-icon {
+    max-width: 30px; }
+  .footer-icons li a {
+    font-size: 24px; }
+  .fa-facebook, .fa-instagram {
+    margin-right: 24px; }
+  .footer-content {
+    width: 75%; }
+  .footer-icons {
+    width: 25%; }
+  .copyright p {
+    margin-top: 24px; }
+  .copyright-list {
+    margin-top: 36px; } }
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 24px 0; }
+  .footer-menu {
+    display: none; }
+  .footer-list :nth-child(2) {
+    margin-top: 6px; }
+  .footer-list li a {
+    font-size: 16px; }
+  .footer-list-icon {
+    max-width: 21px; }
+  .copyright p {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 16px; }
+  .copyright-list {
+    margin-top: 0; }
+  .copyright-list li {
+    width: 100%;
+    margin-top: 8px; } }
 
 /*# sourceMappingURL=all.css.map */
