@@ -373,7 +373,9 @@ a {
 
 /*classic*/
 .classic img {
-  max-width: 635px; }
+  max-width: 635px;
+  -o-object-fit: fill;
+     object-fit: fill; }
 
 .classic-block h4 {
   font-size: 48px;
