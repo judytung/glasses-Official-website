@@ -93,7 +93,7 @@
 .classic {
     img {
         max-width: 635px;
-        object-fit: fill;
+        object-fit: cover;
     }
     &-block h4 {
         font-size:$font-size-lg ;
