@@ -91,6 +91,9 @@
 
 /*classic*/
 .classic {
+    &-list li {
+        overflow: hidden;
+    }
     img {
         max-width: 635px;
         object-fit: cover;
@@ -116,7 +119,7 @@
             margin-right: 0;
         }
         img {
-            width: 390px;
+            max-width: 390px;
         }
         &-block {
             margin-left: 30px;
@@ -142,7 +145,7 @@
             left: calc(12%);
         }
         img {
-            width: 345px;
+            max-width: 345px;
         }
     }
 }
@@ -157,7 +160,7 @@
 /*co-brand*/
 .co-brand {
     background-image: url(../images/bg.png);
-    height:705px;
+    
     background-position: center center;
     &-list {
         li {
@@ -167,6 +170,7 @@
         img {
             width: 540px;
             opacity: 0.5;
+            object-fit: cover;
         }
     }
     &-block {
@@ -180,7 +184,7 @@
     }
     @include pad {
         padding: 40px 0 56px ;
-        height: 452px;
+        
         &-title {
             font-size: $font-size-4;
             margin-bottom: 32px;
@@ -200,7 +204,6 @@
     }
     @include mobile {
         padding: 32px 0 40px 0;
-        height: auto;
         &-title {
             font-size:$font-size-m ;
         }
@@ -271,7 +274,7 @@
 .contact {
     background-color:$color-third ;
     &-container {
-        width: 760px;
+        max-width: 760px;
         padding: 0 15px;
         margin: 0 auto;
         p {
@@ -312,7 +315,7 @@ form{
     .contact {
         padding: 40px 0 56px;
         &-container {
-            width: 480px;
+            max-width: 480px;
             p {
                 font-size: $font-size-1;
             }
@@ -345,7 +348,7 @@ form{
     .contact {
         padding: 32px 0 40px ;
         &-container {
-            width: 375px;
+            max-width: 375px;
         }
         &-title {
             font-size:$font-size-m ;
