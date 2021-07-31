@@ -46,10 +46,321 @@
     }
 }
 
+/*service*/
 
+.service {
+    background-color: $color-third;
+    &-list li{
+       width: 255px;
+    }
+    &-icon {
+        max-width: 100px;
+        max-height: 100px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    p {
+        text-align: left;
+    }
+    @include pad {
+        padding: 40px 0 56px 0;
+        &-title {
+            font-size: $font-size-4;
+            margin-bottom: 0;
+        }
+        &-list  {
+            justify-content: space-around;
+            li {
+                margin-top: 32px;
+            }
+        }
+    }
+    @include mobile {
+        padding: 32px 0 40px;
+        &-title {
+            font-size: $font-size-2;
+        }
+        &-list {
+            align-items: baseline;
+            li :first-child {
+                margin-top: 20px;
+            }
+        }
+    }
+}
 
+/*classic*/
+.classic {
+    img {
+        max-width: 635px;
+    }
+    &-block h4 {
+        font-size:$font-size-lg ;
+        color:$color-primary ;
+    }
+    @include pad {
+        padding: 40px 40px 56px ;
+        &-title {
+            font-size: $font-size-4;
+            margin-bottom: 0;
+        }
+        &-list li {
+            margin-top: 8px;
+        }
+        &-list li:first-child{
+            margin-top: 32px;
+        }
+        &-reverse-setting {
+            flex-direction: row;
+            margin-right: 0;
+        }
+        img {
+            width: 390px;
+        }
+        &-block {
+            margin-left: 30px;
+            h4 {
+                font-size: $font-size-3;
+            }
+        }
+    }
+    @include mobile {
+        padding: 32px 0 40px 0;
+        &-title {
+            font-size: $font-size-m;
+        }
+        &-list li {
+            position: relative;
+            &:first-child{
+                margin-top: 20px;
+            }
+        }
+        &-block {
+            position: absolute;
+            top: calc(50% - 20px);
+            left: calc(12%);
+        }
+        img {
+            width: 345px;
+        }
+    }
+}
 
+.fa-star,.fa-sun,.fa-bolt {
+    font-size: 44px;
+    @include pad {
+        font-size: 40px;
+    }
+}
 
+/*co-brand*/
+.co-brand {
+    background-image: url(../images/bg.png);
+    height:705px;
+    background-position: center center;
+    &-list {
+        li {
+            position: relative;
+            background-color: #fff; 
+        }
+        img {
+            width: 540px;
+            opacity: 0.5;
+        }
+    }
+    &-block {
+        position: absolute;
+        top: calc(40% - 10px);
+        left: calc(25%);
+        h4 {
+            color: $color-primary;
+            font-size: $font-size-6;
+        }
+    }
+    @include pad {
+        padding: 40px 0 56px ;
+        height: 452px;
+        &-title {
+            font-size: $font-size-4;
+            margin-bottom: 32px;
+        }
+        &-list img {
+            width: 330px;
+        }
+        &-block {
+            position: absolute;
+            top: calc(50% - 10px);
+            left: calc(30%);
+            h4 {
+                font-size: $font-size-4;
+                line-height: 1.3
+            }
+        }
+    }
+    @include mobile {
+        padding: 32px 0 40px 0;
+        height: auto;
+        &-title {
+            font-size:$font-size-m ;
+        }
+        &-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+            li {
+                margin-top: 16px;
+                &:first-child {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
 
+/*recommend*/
+.recommend {
+    li {
+        width: 23%;
+        box-shadow: 0px 2px 6px $color-shadow;
+        border: 1px solid $color-border;
+    }
+    &-card-header img {
+        width: 100%;
+    }
+    &-card-body {
+        height: 204px;
+        flex-direction: column;
+        padding: 16px;
+    }
+    .customer-block{
+        color: #212529;
+    }
+    .card-date {
+        color: $color-gray;
+    }
+    @include pad {
+        padding: 40px 0 56px;
+    }
+    &-title {
+        margin-bottom: 0;
+        font-size:$font-size-4 ;
+    }
+    &-list li {
+        width: 48%;
+        margin-top: 32px;
+    }
+    @include mobile {
+        padding: 32px 0 40px ;
+        &-title {
+            font-size: $font-size-m;
+        }
+        &-list li {
+            width: 100%;
+            margin-top: 16px;
+            &:first-child {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/*contact*/
+.contact {
+    background-color:$color-third ;
+    &-container {
+        width: 760px;
+        padding: 0 15px;
+        margin: 0 auto;
+        p {
+            font-size: $font-size-m;
+        }
+    }
+    &-btn {
+        border: none;
+        padding: 16px 143px;
+        display: block;
+        margin: 56px auto 0 auto;
+        color:$color-white ;
+        background-color:$color-primary ;
+        &:hover {
+            background-color:$color-secondary ;
+        }
+    }
+}
+
+.label {
+    display: block;
+}
+
+form{
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 13px 16px;
+}
+
+.textarea {
+    height: 136px;
+}
+
+@include pad {
+    .contact {
+        padding: 40px 0 56px;
+        &-container {
+            width: 480px;
+            p {
+                font-size: $font-size-1;
+            }
+        }
+        &-title {
+            font-size: $font-size-4;
+        }
+        &-btn {
+            font-size: $font-size-s;
+            padding: 10px 77px;
+            margin-top: 20px;
+        }
+    }
+    .label,.check-label {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    .form {
+        margin-top: 16px;
+    }
+    .input {
+        padding: 8px 12px;
+    }
+    .check-box {  
+        margin: 0;
+    }
+}
+
+@include mobile {
+    .contact {
+        padding: 32px 0 40px ;
+        &-container {
+            width: 375px;
+        }
+        &-title {
+            font-size:$font-size-m ;
+            margin-bottom: 20px;
+        }
+        &-btn {
+            padding: 8px 55px;
+        }
+    }
+    .form {
+        margin-top: 0;
+    }
+
+    .textarea {
+        height: 100px;
+    }
+}
 
 
