@@ -222,7 +222,7 @@
 
 /*recommend*/
 .recommend {
-    li {
+    &-list li {
         width: 23%;
         box-shadow: 0px 2px 6px $color-shadow;
         border: 1px solid $color-border;
@@ -243,14 +243,14 @@
     }
     @include pad {
         padding: 40px 0 56px;
-    }
-    &-title {
-        margin-bottom: 0;
-        font-size:$font-size-4 ;
-    }
-    &-list li {
-        width: 48%;
-        margin-top: 32px;
+        &-title {
+            margin-bottom: 0;
+            font-size:$font-size-4 ;
+        }
+        &-list li {
+            width: 48%;
+            margin-top: 32px;
+        }
     }
     @include mobile {
         padding: 32px 0 40px ;

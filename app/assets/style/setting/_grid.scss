@@ -19,9 +19,9 @@
     padding: 0 15px;
     margin: 0 auto;
     @include pad {
-        width: 720px;
+        max-width: 720px;
     };
     @include mobile {
-        width: 390px;
+        max-width: 390px;
     }
 }
