@@ -596,4 +596,45 @@ form {
   .textarea {
     height: 100px; } }
 
+.faq {
+  padding: 96px 0 136px; }
+  .faq-title {
+    padding-left: 16px;
+    border-left: 8px solid #9F1213; }
+  .faq-subtitle {
+    font-size: 32px;
+    margin: 60px 0 36px; }
+  .faq-list li {
+    margin-bottom: 24px; }
+  .faq-question {
+    font-size: 20px; }
+  .faq-ans {
+    margin: 16px 95px 0 95px; }
+  @media (max-width: 992px) {
+    .faq {
+      padding: 60px 25px 72px; }
+      .faq-title {
+        border-left: 4px solid #9F1213; }
+      .faq-list li {
+        margin-bottom: 24px; }
+      .faq-subtitle {
+        margin: 40px 0 32px; }
+      .faq-ans {
+        margin: 16px 0 0 60px; } }
+  @media (max-width: 767px) {
+    .faq {
+      padding: 28px 0 36px; }
+      .faq-title {
+        font-size: 28px; }
+      .faq-subtitle {
+        font-size: 20px;
+        font-weight: normal;
+        margin: 24px 0; }
+      .faq-list li {
+        margin-bottom: 20px; }
+      .faq-question {
+        font-size: 16px; }
+      .faq-ans {
+        margin: 8px 0 0; } }
+
 /*# sourceMappingURL=all.css.map */
