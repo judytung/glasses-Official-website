@@ -542,7 +542,8 @@ a {
     margin: 56px auto 0 auto;
     color: #fff;
     background-color: #AA0601;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-appearance: none; }
     .contact-btn:hover {
       background-color: #650300; }
 
