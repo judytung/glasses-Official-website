@@ -543,7 +543,9 @@ a {
     color: #fff;
     background-color: #AA0601;
     cursor: pointer;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    border-radius: 0;
+    /*iphone手機按鈕跑版加上這兩行*/ }
     .contact-btn:hover {
       background-color: #650300; }
 
