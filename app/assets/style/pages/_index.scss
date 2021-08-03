@@ -286,6 +286,7 @@
         color:$color-white ;
         background-color:$color-primary ;
         cursor: pointer;
+        -webkit-appearance: none;
         &:hover {
             background-color:$color-secondary ;
         }
