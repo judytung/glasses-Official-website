@@ -16,7 +16,6 @@
     @include mobile {
         padding: 0;
         flex-direction: column;
-        align-items: center;
         h1 a {
             width: 48px;
             height: 30px;
@@ -41,7 +40,7 @@
             border: 1px solid #fff;
         }
         li a {
-            padding: 8px 54px;
+            padding: 8px auto;
             &:hover {
                 background-color: #fff;
                 color:$color-primary ;
@@ -86,10 +85,6 @@
     }
 }
 
-
-.hr {
-    border: 1px solid #fff;
-}
 
 .copyright {
     color: $color-white;
@@ -153,16 +148,16 @@
         }
     }
     .copyright{
+        flex-direction: column;
         p {
-            width: 100%;
             font-size: $font-size-s;
             margin-top: 16px;
         }
         &-list {
+            flex-direction: column;
             margin-top: 0;
         }
         &-list li {
-            width: 100%;
             margin-top: 8px;
         }   
     }

@@ -31,9 +31,8 @@
         }
     }
     @include mobile {
-        & {
-            height: 394px;
-        }
+        height: 394px;
+        background-image: url(../images/banner-sm.png);
         &-content {
             p {
                 font-size:$font-size-1 ;
@@ -91,11 +90,8 @@
 
 /*classic*/
 .classic {
-    &-list li {
-        overflow: hidden;
-    }
     img {
-        max-width: 635px;
+        width: 58%;
         object-fit: cover;
     }
     &-block h4 {
@@ -143,9 +139,10 @@
             position: absolute;
             top: calc(50% - 20px);
             left: calc(12%);
+            margin-left: 0;
         }
         img {
-            max-width: 345px;
+            width: 100%;
         }
     }
 }
@@ -288,6 +285,7 @@
         margin: 56px auto 0 auto;
         color:$color-white ;
         background-color:$color-primary ;
+        cursor: pointer;
         &:hover {
             background-color:$color-secondary ;
         }
