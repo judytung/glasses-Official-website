@@ -287,6 +287,7 @@
         background-color:$color-primary ;
         cursor: pointer;
         -webkit-appearance: none;
+        border-radius: 0; /*iphone手機按鈕跑版加上這兩行*/
         &:hover {
             background-color:$color-secondary ;
         }
