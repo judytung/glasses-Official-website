@@ -280,7 +280,9 @@
     }
     &-btn {
         border: none;
-        padding: 16px 143px;
+        width: 50%;
+        padding-top: 16px;
+        padding-bottom: 16px;
         display: block;
         margin: 56px auto 0 auto;
         color:$color-white ;
@@ -307,6 +309,11 @@ form{
     padding: 13px 16px;
 }
 
+.input,.check-box {
+    background: transparent; 
+    border-width: 1px;
+}
+
 .textarea {
     height: 136px;
 }
@@ -325,7 +332,8 @@ form{
         }
         &-btn {
             font-size: $font-size-s;
-            padding: 10px 77px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             margin-top: 20px;
         }
     }
