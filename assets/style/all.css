@@ -537,7 +537,9 @@ a {
       font-size: 20px; }
   .contact-btn {
     border: none;
-    padding: 16px 143px;
+    width: 50%;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: block;
     margin: 56px auto 0 auto;
     color: #fff;
@@ -559,6 +561,10 @@ form {
   width: 100%;
   padding: 13px 16px; }
 
+.input, .check-box {
+  background: transparent;
+  border-width: 1px; }
+
 .textarea {
   height: 136px; }
 
@@ -573,7 +579,8 @@ form {
       font-size: 32px; }
     .contact-btn {
       font-size: 14px;
-      padding: 10px 77px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       margin-top: 20px; }
   .label, .check-label {
     margin-top: 8px;
